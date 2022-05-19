@@ -1,0 +1,254 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.header
+{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(3,5,16,0.5),rgba(3,9,20,0.9)),url(Images/pexels-1.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.centered {
+	color: white; 
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-size: 100px;
+  	font-weight: 600;
+}
+
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav-image
+{
+	width: 150px;
+}
+
+.nav-links
+{
+	flex:1;
+	text-align: right;
+}
+
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 14px 18px;
+	position: relative;
+}
+
+.nav-links ul li a
+{
+	color: #ffff;
+	text-decoration: none;
+	font-size: 30px;
+
+}
+
+.nav-links ul li::after
+{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: white;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+body {
+  background-color : #eee ;
+}
+.reviews {
+  width : 600px; 
+  height : 150px;
+  overflow : hidden ;
+  background-color : #fff ;
+  border-radius : 5px;
+  margin : 50px auto ;
+  position : relative ;
+  box-shadow : 0 0 10px -2px #ddd ;
+}
+.panel {
+  width : 100%;
+  max-height: 100%;
+  position : absolute ; 
+}
+.PanelAct {
+  left : 0 ;
+}
+.panel img { 
+  width : 100px;
+  height : 100px; 
+  text-align : center ;
+  float : left ; 
+  margin : 25px; 
+}
+/*== Removal Start
+png images background
+==*/
+.panel:nth-of-type(1) img {
+    background : #12aedb ;
+}
+.panel:nth-of-type(2) img {
+    background : #db4646 ;
+}
+.panel:nth-of-type(3) img {
+    background : #96c465 ;
+}
+/*== Removal End==*/
+
+.panel p {
+  float : left ; 
+  width : 420px;
+  clear : right ;
+  text-align : justify ;
+  margin : 25px 0 10px 0;
+  font-size : 14px ; 
+  color : #aaa ;
+  line-height : 1.2em
+}
+.panel h7 { 
+  float : left ; 
+  width: 200px; 
+  font-size : 14px ; 
+  color : #999 ;
+  font-weight : bold ;
+  font-style : italic ;
+}
+.control { 
+  position : absolute ; 
+  bottom : 20px; 
+  right : 30px;
+}
+.control span {
+  background-color : rgba(0,0,0,0.1) ; 
+  padding : 5px; 
+  display : inline-block ;
+  vertical-align : top ;
+  margin-left : 5px ;
+  border-radius : 50%;
+  cursor : pointer ;
+  transition : 0.3s ease-in
+}
+.ContActive {
+  background-color : #bbb !important ;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.text-box
+{
+	width:90%;
+	color:#fff;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1
+{
+	font-size: 62px;
+	padding-bottom: 10px;
+}
+.text-box p
+{
+	margin: 10px 0 40px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.header input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
